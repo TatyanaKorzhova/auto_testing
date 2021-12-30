@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "main.java.ru.stqa.pft.sandbox.MyFirstProgram"
+
+repositories{
+    mavenCentral()
+}
+dependencies{
+
+    implementation 'org.testng:testng:7.4.0'
+   // implementation 'com.buschmais.jqassistant.plugin:testng:1.11.1'
+}
+test {
+   // useJUnit()
+    useTestNG()
+}
+
